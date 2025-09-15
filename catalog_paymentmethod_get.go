@@ -113,7 +113,7 @@ func (r *GetCatalogPaymentMethodRequest) NewResponseBody() *GetCatalogPaymentMet
 	return &GetCatalogPaymentMethodResponseBody{}
 }
 
-type GetCatalogPaymentMethodResponseBody PaymentMethods
+type GetCatalogPaymentMethodResponseBody []PaymentMethods
 
 func (r *GetCatalogPaymentMethodRequest) URL() *url.URL {
 	u := r.client.GetEndpointURL("Catalog/PaymentMethod", r.PathParams())
