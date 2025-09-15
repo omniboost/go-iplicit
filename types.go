@@ -918,3 +918,10 @@ type ExtReceiptReq struct {
 	AdditionalProp2 string `json:"additionalProp2,omitempty"`
 	AdditionalProp3 string `json:"additionalProp3,omitempty"`
 }
+
+type PaymentMethods struct {
+	ID          string `json:"id,omitempty"`
+	Description string `json:"description,omitempty"`
+	Code        string `json:"code,omitempty"`
+	IsActive    bool   `json:"isActive,omitempty"`
+}
