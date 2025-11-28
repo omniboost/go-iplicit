@@ -659,7 +659,7 @@ type SaleInvoicePost struct {
 	DueDate               DateTime                   `json:"dueDate,omitempty"`
 	Currency              string                     `json:"currency,omitempty"`
 	CurrencyRate          int                        `json:"currencyRate,omitempty"`
-	IsNetEntry            bool                       `json:"isNetEntry,omitempty"`
+	IsNetEntry            bool                       `json:"isNetEntry"`
 	ExplicitAmounts       bool                       `json:"explicitAmounts,omitempty"`
 	TheirDocNo            string                     `json:"theirDocNo,omitempty"`
 	TheirRef              string                     `json:"theirRef,omitempty"`
@@ -721,7 +721,7 @@ type DetailsSaleRequest struct {
 	TaxBandID              string                          `json:"taxBandId,omitempty"`
 	LineDate               DateTime                        `json:"lineDate,omitempty"`
 	Description            string                          `json:"description,omitempty"`
-	IsNetEntry             bool                            `json:"isNetEntry,omitempty"`
+	IsNetEntry             bool                            `json:"isNetEntry"`
 	CurrencyUnitPrice      float64                         `json:"currencyUnitPrice,omitempty"`
 	NetCurrencyUnitPrice   float64                         `json:"netCurrencyUnitPrice,omitempty"`
 	GrossCurrencyUnitPrice float64                         `json:"grossCurrencyUnitPrice,omitempty"`
